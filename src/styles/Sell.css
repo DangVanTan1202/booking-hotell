@@ -1,0 +1,131 @@
+/* Toàn bộ trang Sell */
+.container {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .btn-group label {
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-group label:hover {
+    background-color: #0d6efd;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  /* Hiệu ứng cho các form group */
+  .form-group {
+    margin-bottom: 30px;
+  }
+  
+  .row.mb-4 {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Hiệu ứng loading */
+  .spinner {
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Cải thiện giao diện của form */
+  input[type="text"],
+  textarea,
+  input[type="number"] {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+    transition: border 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus,
+  input[type="number"]:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+  }
+  
+  input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="file"]:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Tạo hiệu ứng khi hover vào các input radio */
+  input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Hiệu ứng nút radio khi hover */
+  input[type="radio"]:hover + label {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* Hiệu ứng fade-in khi load trang */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  

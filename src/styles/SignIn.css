@@ -1,0 +1,44 @@
+/* Tạo hiệu ứng focus cho input */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+  }
+  
+  /* Tăng cường nút bấm */
+  .btn-primary {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  /* Custom card */
+  .card {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Hiệu ứng fade-in khi load */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Liên kết hover */
+  .text-primary:hover {
+    text-decoration: underline;
+    color: #004085;
+  }
+  
+  .text-secondary:hover {
+    text-decoration: underline;
+    color: #6c757d;
+  }
+  

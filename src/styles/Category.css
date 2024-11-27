@@ -1,0 +1,53 @@
+/* Container toàn màn hình */
+.full-width-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    min-height: 100vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Tiêu đề */
+  .category-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Lưới danh sách */
+  .listings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* Item của danh sách */
+  .listing-item {
+    animation: fadeIn 0.8s;
+  }
+  
+  /* Nút Load More */
+  .load-more-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .load-more-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+  
+  /* Text khi không có offers */
+  .no-offers-text {
+    text-align: center;
+    margin-top: 2rem;
+    color: #6c757d;
+  }
+  

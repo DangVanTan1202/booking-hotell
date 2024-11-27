@@ -1,24 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Explore from "./pages/Explore";
+import ForgotPassword from "./pages/ForgotPassword";
+import HomePage from "./pages/HomePage";
+import ProfilePage from "./pages/ProfilePage";
+import Register from "./pages/Register";
+import SignIn from "./pages/SignIn";
+import 'react-toastify/dist/ReactToastify.css';
+import PrivateRoute from "./components/PrivateRoute";
+import Sell from "./pages/Sell";
+import UpdateListing from "./pages/UpdateListing";
+import Listing from "./pages/Listing";
+import Category from "./pages/Category";
+import 'animate.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/account" element={<PrivateRoute />}>
+            <Route path="/account" element={<ProfilePage />} />
+          </Route>
+          <Route path="/login" element={<SignIn />} />
+          <Route path="/sign-up" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/category/:categoryName" element={<Category/>} />
+          <Route path="/category/:categoryName/:listingId" element={<Listing />} />
+          <Route path="/sells" element={<PrivateRoute />}>
+            <Route path="/sells" element={<Sell />} />
+          </Route>
+          <Route path="/edit-listing" element={<PrivateRoute />}>
+            <Route path="/edit-listing/:listingId" element={<UpdateListing />} />
+          </Route>
+        </Routes>
+        <Footer />
+      </Router>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
+    </>
   );
 }
 

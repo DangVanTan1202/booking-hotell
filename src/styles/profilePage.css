@@ -1,0 +1,146 @@
+/* Đặt nền gradient cho trang Profile */
+.profile-page {
+    background: linear-gradient(to right, #cb1117, #2575fc);
+    color: white;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Thêm hiệu ứng shadow cho các box */
+  .profile-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Thêm hiệu ứng hover cho các box */
+  .profile-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Nút "Apply Change" và "Update Account" */
+  .update-button {
+    color: #ffffff;
+    background-color: #3498db;
+    border-radius: 25px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .update-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Hiệu ứng hover cho các button logout và bán hàng */
+  .logout-button,
+  .sell-button {
+    color: #ffffff;
+    background-color: #e74c3c;
+    border-radius: 25px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  
+  .sell-button {
+    background-color: #2ecc71;
+  }
+  
+  .sell-button:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+  }
+  
+  /* Hiệu ứng cho form input */
+  input[type="email"], input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="email"]:focus, input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Thêm hiệu ứng cho các ảnh */
+  .profile-image {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Hiệu ứng cho text và các thành phần */
+  .text-highlight {
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  .text-muted {
+    color: #7f8c8d;
+  }
+  
+  .profile-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .sub-title {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Thêm hiệu ứng cho các danh sách */
+  .listing-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .listing-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+  }
+  
+  /* Thêm hiệu ứng cho các link */
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+  }
+  
+  /* Các hiệu ứng cho thông báo toast */
+  .toast-success {
+    background-color: #4255e9;
+  }
+  
+  .toast-error {
+    background-color: #e74c3c;
+  }
+  

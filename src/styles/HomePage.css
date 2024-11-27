@@ -1,0 +1,228 @@
+/* --- Global Reset for Full Width --- */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Ngăn kéo ngang */
+}
+
+/* --- Container Full Width --- */
+.container {
+  width: 100vw; /* Chiều rộng toàn màn hình */
+  max-width: none; /* Loại bỏ giới hạn chiều rộng mặc định */
+  padding: 0;
+  margin: 0;
+}
+.full-width-container {
+  width: 100%;
+  max-width: 100%; /* Loại bỏ giới hạn chiều rộng */
+  margin: 0 auto; /* Căn giữa nội dung */
+  padding-left: 16px; /* Thêm padding nếu cần */
+  padding-right: 16px;
+}
+
+
+/* --- Offers Section --- */
+.offers-section {
+  background: linear-gradient(to right, #ffafbd, #ffc3a0);
+  padding: 30px 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.offers-section h1 {
+  color: #1f1f1f;
+}
+
+.offers-section a {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  color: #ffffff;
+  background-color: #ff6f61;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.offers-section a:hover {
+  background-color: #e63946;
+  transform: scale(1.05);
+}
+
+/* --- Places for Rent Section --- */
+.rent-section {
+  background: linear-gradient(to right, #89f7fe, #66a6ff);
+  padding: 30px 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.rent-section h2 {
+  color: #ffffff;
+}
+
+.rent-section a {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  color: #1d3557;
+  background-color: #a8dadc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.rent-section a:hover {
+  background-color: #457b9d;
+  transform: scale(1.05);
+}
+
+/* --- Places for Sale Section --- */
+.sale-section {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  padding: 30px 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  color: #1f1f1f;
+}
+
+.sale-section h2 {
+  color: #1f1f1f;
+}
+
+.sale-section a {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  color: #ffffff;
+  background-color: #e63946;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.sale-section a:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* --- Utility Classes --- */
+.row {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px; /* Tăng khoảng cách giữa các item */
+}
+
+.col-6 {
+  width: calc(50% - 12px); /* Điều chỉnh độ rộng */
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .col-6 {
+    width: calc(25% - 12px); /* Điều chỉnh khi màn hình lớn hơn */
+  }
+}
+
+/* --- Adjust Item Content --- */
+.listing-item {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Đảm bảo các phần tử được xếp theo chiều dọc */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.listing-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.listing-text {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%); /* Căn giữa phần text */
+  background-color: #e63946;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.listing-content {
+  position: relative;
+  z-index: 0;
+  padding: 10px;
+  margin-top: 50px; /* Đảm bảo nội dung không bị che khuất */
+}
+
+.listing-item .listing-content h3,
+.listing-item .listing-content p {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 768px) {
+  .offers-section, .rent-section, .sale-section {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  .row {
+    gap: 15px;
+  }
+
+  .col-6 {
+    width: calc(100% - 10px);
+  }
+
+  .listing-item {
+    border-radius: 8px;
+  }
+
+  .listing-item img {
+    height: auto;
+  }
+
+  .listing-text {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .listing-content {
+    padding: 8px;
+    margin-top: 30px;
+  }
+
+  .listing-item .listing-content h3,
+  .listing-item .listing-content p {
+    font-size: 12px;
+  }
+}

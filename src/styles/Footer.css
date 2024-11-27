@@ -1,0 +1,61 @@
+/* Footer tổng thể */
+.custom-footer {
+    width: 100%; /* Tăng chiều rộng theo toàn trang */
+    background-color: #212529;
+    color: #adb5bd;
+    padding: 0.5rem 0; /* Giảm chiều cao */
+    position: relative;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng cho thẩm mỹ */
+  }
+  
+  /* Container của footer */
+  .footer-container {
+    max-width: 1400px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Giãn đều các phần tử */
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  /* Logo và mô tả */
+  .footer-logo img {
+    max-width: 80px; /* Giảm kích thước logo */
+  }
+  
+  .footer-logo p {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #adb5bd;
+  }
+  
+  /* Liên kết */
+  .footer-links a {
+    font-size: 14px;
+    color: #adb5bd;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s;
+  }
+  
+  .footer-links a:hover {
+    color: #ffffff;
+  }
+  
+  /* Thông tin liên hệ */
+  .footer-contact p {
+    font-size: 12px;
+    color: #adb5bd;
+    margin-bottom: 5px;
+  }
+  
+  /* Phần dưới cùng */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 12px;
+    color: #adb5bd;
+  }
+  

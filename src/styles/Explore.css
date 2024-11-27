@@ -1,0 +1,73 @@
+/* Lớp container toàn màn hình */
+.full-width-container {
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  min-height: 100vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tiêu đề chính */
+.explore-title {
+  color: #ff6f61;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Lưới hiển thị danh sách (grid) */
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Làm cho item lớn hơn */
+  gap: 50rem; /* Tăng khoảng cách giữa các item */
+}
+
+/* Item của từng listing */
+.listing-item {
+  animation-duration: 0.8s;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Thêm bóng cho các item */
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hiệu ứng hover cho các item */
+.listing-item:hover {
+  transform: scale(1.05); /* Khi hover item sẽ to lên một chút */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Thêm bóng khi hover */
+}
+
+/* Nút Load More */
+.load-more-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.load-more-button button {
+  padding: 12px 25px; /* Tăng kích thước nút */
+  font-size: 18px; /* Tăng kích thước chữ */
+  border-radius: 30px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-button button:hover {
+  background-color: #e65c50; /* Màu sắc khi hover */
+}
+
+/* Text khi không có offers */
+.no-offers-text {
+  text-align: center;
+  margin-top: 2rem;
+  color: #6c757d;
+}
+
